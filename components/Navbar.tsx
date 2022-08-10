@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav>
         <Link href="">
-            <a>Linzie</a>
+            <a>Lynzie</a>
         </Link>
         <ul>
             <li>
