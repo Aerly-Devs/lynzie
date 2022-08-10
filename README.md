@@ -1,1 +1,1 @@
-# lynzie
+# Lynzie Project
