@@ -1,5 +1,12 @@
-function MyApp() {
-  return <></>
+import React from 'react'
+import Navbar from "../components/Navbar";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
-export default MyApp
+export default App;

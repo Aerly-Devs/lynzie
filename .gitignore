@@ -256,4 +256,6 @@ $RECYCLE.BIN/
 
 
 .css
+.css.map
+
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,nextjs,react,node
