@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+  color: #696969;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #EFF0F2;
+}
