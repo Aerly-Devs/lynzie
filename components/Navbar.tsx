@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
-import '@/styles/Navbar.module.sass';
+import styles from '@/styles/Navbar.module.sass';
 
 const Navbar = () => {
   return (
-    <header>
-      <nav>
+    <header className={styles.Header}>
+      <nav className={styles.Nav}>
         <Link href="/">
           <a>Lynzie</a>
         </Link>
