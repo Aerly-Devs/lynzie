@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import Navbar from '@/components/Navbar';
 
 const About = () => {
   return (
@@ -7,6 +8,7 @@ const About = () => {
       <Head>
         <title>About | Lynzie</title>
       </Head>
+      <Navbar />
       <div>About</div>
     </React.Fragment>
   );

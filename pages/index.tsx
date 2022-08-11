@@ -1,11 +1,17 @@
-import Navbar from '@/components/Navbar';
 import { NextPage } from 'next';
 import React from 'react';
+import Head from 'next/head';
+import Navbar from "@/components/Navbar";
 
 const Home: NextPage = () => {
   return (
-    <Navbar />
-  )
+    <React.Fragment>
+      <Head>
+        <title>Home | Lynzie</title>
+      </Head>
+      <Navbar />
+    </React.Fragment>
+  );
 }
 
 export default Home;
