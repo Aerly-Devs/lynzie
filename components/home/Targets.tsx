@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '@/styles/home/Targets.module.sass';
 
 const Targets = () => {
   return (

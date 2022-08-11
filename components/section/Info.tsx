@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '@/styles/section/Info.module.sass';
 
 const Info = () => {
   return (
