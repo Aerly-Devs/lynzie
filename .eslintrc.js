@@ -1,23 +1,31 @@
 module.exports = {
-    root: true,
-    env: {
-        browser: true,
-        amd: true,
-        node: true,
-        es6: true,
+  root: true,
+  env: {
+    browser: true,
+    amd: true,
+    node: true,
+    es6: true,
   },
-    extends: [
+  extends: [
     "eslint:recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
     "next",
-    "next/core-web-vitals"
+    "next/core-web-vitals",
   ],
-    rules: {
-    "semi": [
-      "error",
-      "always"
-    ],
+  settings: {
+    react: { version: "detect" },
+  },
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 12,
+    sourceType: "module",
+  },
+  rules: {
+    semi: ["error", "always"],
     "prettier/prettier": 0,
-  }
-}
+  },
+};

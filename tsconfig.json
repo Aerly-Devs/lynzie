@@ -1,23 +1,21 @@
 {
   "compilerOptions": {
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": [
+        "components/*"
+      ],
+      "@/styles/*": [
+        "styles/*"
+      ]
+    },
     "target": "ES2016",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "baseUrl": ".",
-    "paths": {
-      "@pages/*": [
-        "pages/*"
-      ],
-      "@styles/*": [
-        "styles/*"
-      ],
-      "@components/*": [
-        "components/*"
-      ]
-    },
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,

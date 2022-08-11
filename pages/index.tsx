@@ -1,10 +1,11 @@
+import Navbar from '@/components/Navbar';
+import { NextPage } from 'next';
 import React from 'react';
-import App from './_app';
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <>
-      <App />
-    </>
+    <Navbar />
   )
 }
+
+export default Home;

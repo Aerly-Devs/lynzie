@@ -1,12 +1,8 @@
 import React from 'react'
-import Navbar from "@components/Navbar";
+import type { AppProps } from 'next/app';
 
-function App() {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
+function App({Component, pageProps}: AppProps) {
+  return <Component {...pageProps} />
 }
 
 export default App;
