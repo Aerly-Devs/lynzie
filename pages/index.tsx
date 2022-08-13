@@ -2,16 +2,18 @@ import React from 'react';
 import Head from 'next/head';
 import { NextPage } from "next";
 import Navbar from "@/components/Navbar";
+import Home from '@/components/home/Home';
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
-    <React.Fragment>
+    <>
       <Head>
         <title>Home | Lynzie</title>
       </Head>
       <Navbar />
-    </React.Fragment>
+      <Home />
+    </>
   );
 }
 
-export default Home;
+export default HomePage;
