@@ -1,0 +1,26 @@
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  min-width: 320px;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+.Nav .logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #171717;
+}
+.Nav a {
+  color: #171717;
+  font-size: 1.4rem;
+}
+.Nav ul {
+  display: flex;
+  gap: 20px;
+}/*# sourceMappingURL=Navbar.module.css.map */
