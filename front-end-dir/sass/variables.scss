@@ -1,0 +1,36 @@
+$bg: #EFF0F2;
+$dark: #171717;
+$gray-text: #696969;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $bg;
+}
+
+@mixin boton {
+    display: block;
+    background-color: $dark;
+    width: 100%;
+    padding: 2rem 3rem;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+    color: $bg;
+    letter-spacing: 0.3rem;
+    font-size: 1.2rem;
+}
+
+
+
