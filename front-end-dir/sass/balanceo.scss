@@ -1,0 +1,83 @@
+@import 'variables';
+
+header{
+   @include bg_secciones;
+   height: 100vh;
+
+   .bar_navegation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    
+    .logo {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: $bg;
+    }
+
+    nav {
+        ul {
+            display: flex;
+
+            li {
+                margin-left: 2rem;
+            }
+
+            a {
+                font-size: 1.3rem;
+                color: $bg;
+                font-weight: 300;
+            }
+        }
+        
+    }
+    
+   }
+   color: $bg;
+}
+
+.a{
+    background-image: url(https://i.ibb.co/LnDX7WS/sect-a-2.png);
+}
+
+.b{
+    background-image: url(https://i.ibb.co/cYmYKsY/sect-b-2.png);
+}
+
+.text_balanceo{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 85vh;
+
+    h1{
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        
+    }
+
+    a{
+        @include boton_Blanco;
+    }
+}
+
+@media screen and (min-width:950px) {
+     .text_balanceo{
+        height: 55vh;
+        text-align: center;
+        align-items: center;
+        width: 70%;
+        margin: auto auto;
+     a{
+        width: 300px;
+     }
+     }
+
+}

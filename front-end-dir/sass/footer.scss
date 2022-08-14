@@ -1,0 +1,43 @@
+@import 'variables';
+
+
+footer{
+    background-color: $dark;
+    color: $bg;
+    padding: 45px 0px;
+
+    .text_footer{
+        p{
+            font-size: 1.5rem
+        }
+    }
+
+    .aerly{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top:22px;
+    }
+}
+
+.bar_navegation{
+    @include bar_nav_footer;
+
+    a{
+        color: $bg;
+        font-size: 1.9rem;
+        font-weight: 800;
+    }
+
+    ul{
+        display: flex;
+    }
+
+    li{
+        margin-right: 20px;
+
+        a{
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+    }
+}
