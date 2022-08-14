@@ -5,18 +5,18 @@
 @media screen and (max-width: 400px) {
 
   //mobile place holders
-  %title{
+  %title {
     font-size: 24px;
     margin-bottom: 18px;
   }
 
-  %title-card{
+  %title-card {
     font-size: 24px;
     color: $bg;
     font-weight: 600;
   }
 
-  %description-card-text{
+  %description-card-text {
     font-size: 18px;
     font-weight: lighter;
     color: $bg;
@@ -25,59 +25,83 @@
 
 
   .container {
-    overflow-wrap: break-word;
     padding: 24px;
 
     header {
       .paragraph {
         margin-bottom: 32px;
+
         .title {
           @extend %title;
         }
+
         .description-text {
           font-size: 18px;
         }
       }
     }
 
-    .card{
+    .card {
       width: 100%;
       height: auto;
       border-radius: 7px;
       padding: 32px;
       background-color: $dark;
+      margin-bottom: 32px;
 
-      .title-card{
+      .title-card {
         @extend %title-card;
         margin-bottom: 6px;
       }
 
-      .card-description{
+      .card-description {
         @extend %description-card-text;
         margin-bottom: 18px;
       }
 
-      hr{
+      hr {
         margin-bottom: 18px;
       }
 
-      .icons-container{
+      .icons-container {
         display: flex;
         justify-content: space-between;
 
-        .icon{
+        .icon {
           filter: $bg-filter
         }
       }
     }
 
-     section{
-      .title{
+    section {
+      .title {
         @extend %title;
+        margin-bottom: 32px;
       }
-     }
+
+      .technologies-container{
+        display: grid;
+        justify-items: center;
+        row-gap: 42px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 42px;
+
+        .technology{
+          .description-text{
+            margin-top: 12px;
+            text-align: center;
+            font-weight: 300;
+          }
+        }
+      }
+    }
 
     .final-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+
       .half-image {
         img {
           width: 100%;
@@ -105,10 +129,13 @@
 }
 
 .container {
+  overflow-wrap: break-word;
   width: 100vw;
 }
 
 .final-container {
+
+
   .half-image {
     img {
       width: 50%;

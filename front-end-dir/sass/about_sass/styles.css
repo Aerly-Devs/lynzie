@@ -32,7 +32,6 @@ body {
     color: #EFF0F2;
   }
   .container {
-    overflow-wrap: break-word;
     padding: 24px;
   }
   .container header .paragraph {
@@ -47,6 +46,7 @@ body {
     border-radius: 7px;
     padding: 32px;
     background-color: #171717;
+    margin-bottom: 32px;
   }
   .container .card .title-card {
     margin-bottom: 6px;
@@ -64,6 +64,27 @@ body {
   .container .card .icons-container .icon {
     filter: invert(100%) sepia(0%) saturate(4078%) hue-rotate(299deg) brightness(99%) contrast(89%);
   }
+  .container section .title {
+    margin-bottom: 32px;
+  }
+  .container section .technologies-container {
+    display: grid;
+    justify-items: center;
+    row-gap: 42px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 42px;
+  }
+  .container section .technologies-container .technology .description-text {
+    margin-top: 12px;
+    text-align: center;
+    font-weight: 300;
+  }
+  .container .final-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
   .container .final-container .half-image img {
     width: 100%;
     height: auto;
@@ -79,6 +100,7 @@ body {
 }
 
 .container {
+  overflow-wrap: break-word;
   width: 100vw;
 }
 
