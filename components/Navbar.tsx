@@ -7,7 +7,7 @@ const Navbar = () => {
     <header className={styles.Header}>
       <nav className={styles.Nav}>
         <Link href="/">
-          <a>Lynzie</a>
+          <a className={styles.logo}>LYNZIE</a>
         </Link>
         <ul>
           <li>

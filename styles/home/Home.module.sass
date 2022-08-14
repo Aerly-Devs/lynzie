@@ -1,0 +1,47 @@
+@import '../vars'
+
+@media screen and (min-width: 375px)
+
+  .Home
+    width: 85%
+    min-width: 320px
+    min-height: 90vh
+    margin: auto
+    display: grid
+    grid-template-columns: repeat(1, 100%)
+    justify-content: center
+
+
+    figure
+      min-width: 288px
+      display: flex
+      justify-content: center
+      align-items: center
+      z-index: 0
+
+      .Image
+        animation: img 60s infinite linear
+
+    @keyframes img
+      0%
+        rotate: 0deg
+      100%
+        rotate: 359deg
+
+    article
+      text-align: center
+
+      h1
+        font-size: 3.5rem
+        color: $dark
+        margin-bottom: 24px
+
+      p
+        color: $dark
+        margin-bottom: 28px
+
+      button
+        @include button()
+
+
+

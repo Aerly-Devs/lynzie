@@ -7,3 +7,27 @@ $gray-text: #696969
 // Fonts
 
 $sm: 1.4rem
+
+// Font-weight
+
+$regular: 300
+$heavy: 800
+
+// Mixins
+
+@mixin button()
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $dark
+  min-width: 288px
+  width: 100%
+  border-radius: 8px
+  border: none
+  margin-top: 20px
+
+  a
+    width: 100%
+    color: $bg-white
+    letter-spacing: 3px
+    padding: 20px 30px
