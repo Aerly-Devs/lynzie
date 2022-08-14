@@ -10,7 +10,7 @@ const Home = () => {
         <figure>
           <Image
             className={styles.Image}
-            src="https://i.ibb.co/jw0j786/resource-database-F-z2c-Hs-OXn-M-unsplash.jpg"
+            src="https://i.ibb.co/th7mxZ8/atom.png"
             alt="Lynzie"
             width={350}
             height={450}

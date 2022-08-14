@@ -1,1 +1,45 @@
-@import 'vars'
+@import '../vars'
+
+@media screen and (min-width: 300px)
+  .Targets-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    justify-self: center
+    width: 85%
+    min-width: 288px
+    margin: auto
+    @include section
+
+    h2
+      @include title
+
+  .targets
+    article
+      @include target
+
+      button
+        @include white-button
+
+      h3
+        font-size: 2rem
+        margin-bottom: 10px
+
+      p
+        font-size: 1.3rem
+
+    .first-target
+      background-image: url(https://i.ibb.co/pWqjtvv/sect-A-1.png)
+
+    .second-target
+      background-image: url(https://i.ibb.co/6WCtM1N/sect-B-1.png)
+
+@media screen and (min-width: 900px)
+  .Targets-container
+    width: 70%
+
+  .targets
+    display: grid
+    grid-template-columns: repeat(2, 48%)
+    justify-content: space-between
+
