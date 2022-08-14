@@ -16,36 +16,73 @@ body {
   background-color: #EFF0F2;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 400px) {
+  .container section .title, .container header .paragraph .title {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+  .container .card .title-card {
+    font-size: 24px;
+    color: #EFF0F2;
+    font-weight: 600;
+  }
+  .container .card .card-description {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #EFF0F2;
+  }
   .container {
-    max-width: 85%;
-    margin: auto auto;
-    overflow: hidden;
+    overflow-wrap: break-word;
+    padding: 24px;
   }
-  header {
-    height: 100vh;
+  .container header .paragraph {
+    margin-bottom: 32px;
   }
-  header .bar_navegation {
+  .container header .paragraph .description-text {
+    font-size: 18px;
+  }
+  .container .card {
     width: 100%;
+    height: auto;
+    border-radius: 7px;
+    padding: 32px;
+    background-color: #171717;
+  }
+  .container .card .title-card {
+    margin-bottom: 6px;
+  }
+  .container .card .card-description {
+    margin-bottom: 18px;
+  }
+  .container .card hr {
+    margin-bottom: 18px;
+  }
+  .container .card .icons-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-top: 3rem;
   }
-  header .bar_navegation .logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #171717;
+  .container .card .icons-container .icon {
+    filter: invert(100%) sepia(0%) saturate(4078%) hue-rotate(299deg) brightness(99%) contrast(89%);
   }
-  header .bar_navegation nav ul {
-    display: flex;
+  .container .final-container .half-image img {
+    width: 100%;
+    height: auto;
   }
-  header .bar_navegation nav ul li {
-    margin-left: 2rem;
-  }
-  header .bar_navegation nav ul a {
-    font-size: 1.3rem;
-    color: #171717;
-    font-weight: 300;
-  }
+}
+.card .icons-container .icon-container {
+  height: 32px;
+  width: 32px;
+}
+.card .icons-container .icon-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 100vw;
+}
+
+.final-container .half-image img {
+  width: 50%;
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */
