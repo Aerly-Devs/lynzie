@@ -1,6 +1,6 @@
 @import '../vars'
 
-@media screen and (min-width: 375px)
+@media screen and (min-width: 300px)
 
   .Home
     width: 85%
@@ -9,15 +9,12 @@
     margin: auto
     display: grid
     grid-template-columns: repeat(1, 100%)
-    justify-content: center
-
 
     figure
       min-width: 288px
       display: flex
       justify-content: center
       align-items: center
-      z-index: 0
 
       .Image
         animation: img 60s infinite linear
@@ -42,6 +39,7 @@
 
       button
         @include button()
+
 
 
 

@@ -2,7 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import { NextPage } from "next";
 import Navbar from "@/components/Navbar";
-import Home from '@/components/home/Home';
+import MainHome from '@/templates/home/MainHome';
+import Footer from '@/components/Footer';
 
 const HomePage: NextPage = () => {
   return (
@@ -11,7 +12,8 @@ const HomePage: NextPage = () => {
         <title>Home | Lynzie</title>
       </Head>
       <Navbar />
-      <Home />
+      <MainHome />
+      <Footer />
     </>
   );
 }
