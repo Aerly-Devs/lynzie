@@ -1,1 +1,37 @@
 @import 'vars'
+
+.Footer
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $dark
+  color: $bg-white
+  padding: 40px 0
+
+  .footer-container
+    width: 85%
+    min-width: 288px
+
+  .aerly
+    text-align: center
+    margin-top: 26px
+
+    h4
+      font-weight: 600
+
+  .navigation
+    @include footer-navbar
+
+    a
+      color: $bg-white
+      font-size: 2rem
+      font-weight: $heavy
+
+    ul
+      display: flex
+      gap: 20px
+
+      li a
+        font-weight: $regular
+        font-size: $sm
+
