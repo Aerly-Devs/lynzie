@@ -1,4 +1,10 @@
-@import 'variables';
+@import '../index_sass/variables.scss';
+
+.container{
+    max-width: 85%;
+        margin: auto auto;
+        overflow: hidden;
+}
 
 header{
    @include bg_secciones;
