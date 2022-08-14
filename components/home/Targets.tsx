@@ -3,7 +3,14 @@ import '@/styles/home/Targets.module.sass';
 
 const Targets = () => {
   return (
-    <div>Targets</div>
+    <section>
+      <div>
+        <h2>Ecuaciones Químicas</h2>
+      </div>
+      <article>
+        
+      </article>
+    </section>
   )
 }
 

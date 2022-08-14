@@ -5,7 +5,7 @@ import styles from '@/styles/home/Home.module.sass';
 
 const Home = () => {
   return (
-    <main className={styles.Home}>
+    <section className={styles.Home}>
       <section>
         <figure>
           <Image
@@ -29,7 +29,7 @@ const Home = () => {
           </button>
         </article>
       </section>
-    </main>
+    </section>
   );
 }
 
