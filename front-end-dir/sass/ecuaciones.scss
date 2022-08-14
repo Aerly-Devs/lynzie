@@ -26,6 +26,7 @@
     
     .ecuaciones{
         @include section;
+        margin-top: 40px;
         h2{
             @include tema;
         }
