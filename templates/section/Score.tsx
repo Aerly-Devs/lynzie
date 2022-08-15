@@ -1,8 +1,11 @@
 import React from 'react';
+import ScoreInput from "@/components/section/ScoreInput";
 
 const Score = () => {
   return (
-    <div>Score</div>
+    <main>
+      <ScoreInput />
+    </main>
   )
 }
 

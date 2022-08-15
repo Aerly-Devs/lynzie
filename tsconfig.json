@@ -11,6 +11,9 @@
       ],
       "@/templates/*": [
         "templates/*"
+      ],
+      "@pages/score/*": [
+        "pages/score/*"
       ]
     },
     "target": "ES2016",
