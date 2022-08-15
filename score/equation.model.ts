@@ -1,10 +1,13 @@
+export type ReagentsProducts = 'reagents' | 'products';
+
 export type SideEquation = {
+  type: ReagentsProducts;
   substancesAmount: number;
-  value: string;
+  Substances: Substance[];
 }
 
 export type Substance = {
   name: string;
-  type: string;
-  value: number;
+  type: ReagentsProducts;
+  quantity: number;
 }
