@@ -1,1 +1,122 @@
 @import 'vars'
+
+  // mobile
+@media screen and (max-width: 480px)
+
+  //mobile place holders
+  %title
+    font-size: 24px
+    margin-bottom: 18px
+
+  %title-card
+    font-size: 24px
+    color: $bg
+    font-weight: 600
+
+  %description-card-text
+    font-size: 18px
+    font-weight: lighter
+    color: $bg
+
+    .card
+      .title-card
+        @extend %title-card
+        margin-bottom: 6px
+
+
+      .card-description
+        @extend %description-card-text
+        margin-bottom: 18px
+
+
+      hr
+        margin-bottom: 18px
+
+
+      .icons-container
+        display: flex
+        justify-content: space-between
+
+        .icon
+          filter: $bg-filter
+
+//tablet
+@media screen and (min-width: 512px)
+
+  //tablet placeholders
+  %title-tablet
+    font-size: 24px
+    margin-bottom: 18px
+
+
+  %title-card-tablet
+    font-size: 18px
+    color: $bg
+    font-weight: 600
+
+  %description-card-text-tablet
+    font-size: 16px
+    font-weight: lighter
+    color: $bg
+
+    .card
+      .title-card
+        @extend %title-card-tablet
+        margin-bottom: 12px
+
+      .card-description
+        @extend %description-card-text-tablet
+        margin-bottom: 32px
+
+      hr
+        margin-bottom: 28px
+
+      .icons-container
+        display: flex
+        justify-content: space-between
+
+        .icon
+          filter: $bg-filter
+
+// Desktop
+@media screen and (min-width: 920px) 
+
+  // Desktop placeholders
+  %title-card-desktop
+    font-size: 24px
+    color: $bg
+    font-weight: 600
+
+  %description-card-text-desktop
+    font-size: 20px
+    font-weight: lighter
+    color: $bg
+
+  .container
+    .cards
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      column-gap: 24px
+      margin-bottom: 64px
+
+      .card
+        .title-card
+          @extend %title-card-desktop
+          margin-bottom: 12px
+
+        .card-description
+          @extend %description-card-text-desktop
+          margin-bottom: 32px
+
+        hr
+          margin-bottom: 28px
+
+
+        .icons-container
+          display: flex
+          justify-content: space-between
+
+          .icon
+            filter: $bg-filter
+
+
