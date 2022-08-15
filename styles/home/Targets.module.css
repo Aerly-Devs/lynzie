@@ -1,0 +1,69 @@
+@media screen and (min-width: 300px) {
+  .Targets-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    width: 85%;
+    min-width: 288px;
+    margin: auto;
+    margin-bottom: 60px;
+    height: 100%;
+  }
+  .Targets-container h2 {
+    font-size: 2rem;
+    color: #171717;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .targets article {
+    width: 100%;
+    height: 275px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 35px;
+    color: #EFF0F2;
+  }
+  .targets article button {
+    display: flex;
+    justify-content: center;
+    background-color: #EFF0F2;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .targets article button a {
+    width: 100%;
+    padding: 20px 30px;
+    color: #696969;
+    letter-spacing: 0.3rem;
+    font-size: 1.2rem;
+  }
+  .targets article h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .targets article p {
+    font-size: 1.3rem;
+  }
+  .targets .first-target {
+    background-image: url(https://i.ibb.co/pWqjtvv/sect-A-1.png);
+  }
+  .targets .second-target {
+    background-image: url(https://i.ibb.co/6WCtM1N/sect-B-1.png);
+  }
+}
+@media screen and (min-width: 900px) {
+  .targets {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=Targets.module.css.map */
