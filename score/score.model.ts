@@ -21,4 +21,12 @@ export class Score {
 
     return array;
   }
+
+  private identifyElements(): void {
+
+  }
+
+  private operateQuantities(): void {
+
+  }
 }
