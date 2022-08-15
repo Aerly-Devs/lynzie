@@ -9,6 +9,9 @@
       "@/styles/*": [
         "styles/*"
       ],
+      "@/styles/about/*": [
+        "styles/about/*"
+      ],
       "@/templates/*": [
         "templates/*"
       ]

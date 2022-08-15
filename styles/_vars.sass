@@ -79,3 +79,26 @@ $heavy: 800
   align-items: center
   margin-bottom: 20px
   color: $gray-text
+
+@mixin technologies-settings
+  display: grid
+  justify-items: center
+  row-gap: 42px
+  margin-bottom: 42px
+
+  .technology
+    .description-text
+      margin-top: 12px
+      text-align: center
+      font-size: 16px
+
+@mixin final-container-settings
+  display: grid
+  grid-template-columns: 1fr 1fr
+  justify-items: center
+  align-items: center
+
+  .half-image
+    img
+      width: 100%
+      height: auto
