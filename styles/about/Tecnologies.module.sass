@@ -1,1 +1,43 @@
-@import 'vars'
+@import '../vars'
+
+@media screen and (max-width: 480px)
+  %title
+    font-size: 24px
+    margin-bottom: 18px
+
+  section
+      .title
+        @extend %title;
+        margin-bottom: 32px
+
+      .technologies-container
+        @include technologies-settings
+        grid-template-columns: repeat(2, 1fr)
+
+
+@media screen and (min-width: 512px)
+  %title
+    font-size: 24px
+    margin-bottom: 18px
+
+    section
+      .title
+        @extend %title-tablet
+        margin-bottom: 42px
+
+      .technologies-container
+        @include technologies-settings
+        grid-template-columns: repeat(3, 1fr)
+
+@media screen and (min-width: 920px)
+  %title
+    font-size: 24px
+    margin-bottom: 18px
+
+    section
+      .title
+        text-align: center
+        margin-bottom: 52px
+
+      .technologies-container
+        grid-template-columns: repeat(6, 1fr)
