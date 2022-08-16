@@ -1,10 +1,15 @@
 import React from 'react';
 
-const Substance = ({ value }) => {
+const Substance = ({ value, quantity }) => {
   return (
     <>
       <div>
-        {value}
+        <span>
+          {value}
+        </span>
+        <span>
+          {quantity}
+        </span>
       </div>
     </>
   )
