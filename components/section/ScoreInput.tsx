@@ -1,19 +1,33 @@
 import React, { useState } from 'react';
-// import { SideEquation, Substance } from "@/score/score.model";
+import Substances from '@/components/section/Substances';
+import Substance from '@/components/section/Substance';
+import { SideEquation, SubstanceType } from '../../index.d';
 
 type Mode = 'Substance' | 'Quantity';
 
 const ScoreInput = () => {
-  const [value, setValue] = useState('');
-  const [mode, setMode] = useState('Substance');
+  const [stringValue, setStringValue] = useState('');
+  const [numberValue, setNumberValue] = useState();
+  const [mode, setMode] = useState(' Substance');
+
+  const reagents: SideEquation = {
+    type: 'reagents'
+  };
+
+  const products: SideEquation = {
+    type: 'products'
+  };
 
   const onMode = (mode: Mode) => {
     setMode(mode);
   }
 
-  const onChangeValue = (event) => {
-    if (isNaN(event.target.value.substr(-1)) && mode == 'Substance') setValue(event.target.value);
-    if (!isNaN(event.target.value.substr(-1)) && mode == 'Quantity') setValue(event.target.value);
+  const onStringChangeValue = (event) => {
+    if (isNaN(event.target.value.substr(-1)) && mode == 'Substance') setStringValue(event.target.value);
+  }
+
+  const onNumberChangeValue = event => {
+    if (!isNaN(event.target.value.substr(-1)) && mode == "Quantity") setNumberValue(event.target.value);
   }
 
   return (
@@ -21,12 +35,19 @@ const ScoreInput = () => {
       <article>
         <div>
           <h4>
-            {value}
+            <Substances id={reagents.type}>
+              <Substance value={stringValue} quantity={numberValue}/>
+            </Substances>
+          </h4>
+          <h4>
+            <Substances id={products.type}>
+              <Substance value={stringValue} quantity={numberValue} />
+            </Substances>
           </h4>
         </div>
       </article>
       <section>
-        <input placeholder='Ingresar los datos' onChange={onChangeValue} />
+        <input placeholder='Ingresar los datos' onChange={onStringChangeValue || onNumberChangeValue} />
         <div>
           <button type="button" onClick={() => onMode('Substance')}>Sustancia</button>
           <button type="button" onClick={() => onMode('Quantity')}>Cantidad</button>

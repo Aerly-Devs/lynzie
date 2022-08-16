@@ -1,4 +1,4 @@
-import { ReagentsProducts, SideEquation, Substance } from './equation.model';
+import { ReagentsProducts, SideEquation, Substance } from '../index';
 
 export class Score {
   public receiveEquation(reagents: SideEquation, products: SideEquation): void {
