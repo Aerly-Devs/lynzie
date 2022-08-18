@@ -9,6 +9,9 @@
       "@/components/section/*": [
         "components/section/*"
       ],
+      "@/components/about/*": [
+        "components/about/*"
+      ],
       "@/styles/*": [
         "styles/*"
       ],
