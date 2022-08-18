@@ -32,6 +32,16 @@ const Tecnologies = ({ styles }) => {
           </figure>
         </div>
       </section>
+      <section>
+        <div className={styles["final-container"]}>
+          <div className={styles["half-text"]}>
+            <h3 className={styles.title}>LYNZIE</h3>
+          </div>
+          <figure className={styles["half-image"]}>
+            <img src="/icons/logo-removebg.png" alt="Lynzie abstract figure" />
+          </figure>
+        </div>
+      </section>
     </>
   )
 }
