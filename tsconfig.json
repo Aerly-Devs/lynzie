@@ -15,6 +15,9 @@
       "@/styles/about/*": [
         "styles/about/*"
       ],
+      "@/styles/home/*": [
+        "styles/home/*"
+      ],
       "@/templates/*": [
         "templates/*"
       ],

@@ -15,44 +15,52 @@ $heavy: 800
 
 // Mixins
 
-@mixin button()
-  display: flex
-  justify-content: center
-  align-items: center
-  background-color: $dark
-  min-width: 288px
-  width: 100%
-  border-radius: 8px
-  border: none
-  margin-top: 20px
-
-  a
+@mixin boton
+    display: block
+    background-color: $dark
     width: 100%
+    padding: 20px 30px
+    border-radius: 0.8rem
+    margin-top: 2rem
     color: $bg-white
-    letter-spacing: 3px
-    padding: 20px 30px
+    letter-spacing: 0.3rem
+    font-size: 1.2rem
+    text-align: center
 
-@mixin white-button()
-  display: flex
-  justify-content: center
-  background-color: $bg-white
-  border-radius: 8px
-  border: none
-  margin-top: 20px
-  text-align: center
-
-  a
+@mixin boton_blanco
+    display: block
+    background-color: $bg-white
     width: 100%
     padding: 20px 30px
+    border-radius: 0.8rem
+    margin-top: 20px
     color: $gray-text
     letter-spacing: 0.3rem
     font-size: 1.2rem
+    text-align: center
 
-@mixin title()
+
+@mixin target_bg
+  width: 100%
+  height: 275px
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 10px
+  margin-bottom: 30px
+  padding: 35px
+  color: $bg-white
+
+
+@mixin tema
    font-size: 2rem
    color: $dark
    margin-bottom: 20px
    text-transform: uppercase
+
 
 @mixin section()
     margin-bottom: 60px
