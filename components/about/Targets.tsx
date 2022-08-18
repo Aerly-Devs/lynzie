@@ -1,10 +1,46 @@
-import React from 'react';
-import "@/styles/about/Targets.module.sass";
+import React from "react";
+import Target from "@/components/about/Target";
+import styles from "@/styles/about/About.module.scss";
 
 const Targets = () => {
-  return (
-    <div>Targets</div>
-  )
-}
+  const developers = [
+    {
+      name: "Daniel Alessandro García Batres",
+      instagram: "#",
+      github: "#",
+      linkedin: "#",
+      twitter: "#",
+    },
+    {
+      name: "Héctor Ramón Rivera González",
+      instagram: "#",
+      github: "#",
+      linkedin: "#",
+      twitter: "#",
+    },
+    {
+      name: "Erick Wilfredo Cáceres González",
+      instagram: "#",
+      github: "#",
+      linkedin: "#",
+      twitter: "#",
+    },
+  ];
 
-export default Targets
+  return (
+    <>
+      {developers.map(developer => {
+        return <Target
+          styles={styles}
+          name={developer.name}
+          instagram={developer.instagram}
+          github={developer.github}
+          linkedin={developer.linkedin}
+          twitter={developer.twitter}
+        />;
+      })}
+    </>
+  );
+};
+
+export default Targets;

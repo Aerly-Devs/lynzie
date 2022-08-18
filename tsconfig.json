@@ -6,11 +6,32 @@
       "@/components/*": [
         "components/*"
       ],
+      "@/components/section/*": [
+        "components/section/*"
+      ],
+      "@/components/about/*": [
+        "components/about/*"
+      ],
       "@/styles/*": [
         "styles/*"
       ],
+      "@/styles/about/*": [
+        "styles/about/*"
+      ],
+      "@/styles/home/*": [
+        "styles/home/*"
+      ],
       "@/templates/*": [
         "templates/*"
+      ],
+      "@/templates/about/*": [
+        "templates/about/*"
+      ],
+      "@/public/icons/*": [
+        "public/icons/*"
+      ],
+      "@/pages/*": [
+        "pages/*"
       ]
     },
     "target": "ES2016",
