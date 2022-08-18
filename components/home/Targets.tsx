@@ -13,7 +13,7 @@ const Targets = ({ styles }) => {
               Son objetos que emiten una luz relajante y quedan muy bien en
               cualquier dormitorio.
             </p>
-            <Link href="#">
+            <Link href="/section/lampara">
               <a>COMENZAR</a>
             </Link>
           </div>
@@ -25,7 +25,7 @@ const Targets = ({ styles }) => {
               Se denomina dentífrico de elefante, pasta de dientes de elefante o
               volcán de espuma.
             </p>
-            <Link href="#">
+            <Link href="/section/elefante">
               <a>COMENZAR</a>
             </Link>
           </div>

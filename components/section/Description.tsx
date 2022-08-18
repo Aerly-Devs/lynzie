@@ -1,28 +1,49 @@
 import React from 'react';
 import Link from 'next/link';
-import '@/styles/section/Description.module.sass';
 
-const Description = ({ styles }) => {
+const Description = ({ styles, title, description, image }) => {
   return (
-    <section className={styles["cont_exp"]}>
-      <div className={styles.container}>
+    <>
+      <header className={styles.header}>
+        <div className={styles.container}>
+          <section className={styles["bar_navegation"]}>
+            <Link href="/">
+              <a className={styles.logo}>LYNZIE</a>
+            </Link>
+            <nav>
+              <ul>
+                <li>
+                  <Link href="/">
+                    <a>Home</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about">
+                    <a>About</a>
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </header>
+      <section className={styles["cont_exp"]}>
         <div className={styles["text_exp"]}>
-          <h1>Lampara de Lava</h1>
-          <p>
-            ¿Qué es una lámpara de lava? Una lampara de lava es un recipiente
-            lleno de agua en el que puedes ver como burbujas suben y bajan que,
-            en función del color, pueden parecer lava volcánica. Son objetos que
-            emiten una luz relajante y quedan muy bien en cualquier dormitorio.
-          </p>
-          <Link href="#">
-            <a>COMENZAR</a>
-          </Link>
+          <div className={styles.container}>
+            <h1>{title}</h1>
+            <p>
+              {description}
+            </p>
+            <Link href="/">
+              <a>COMENZAR</a>
+            </Link>
+          </div>
         </div>
         <div className={styles["img_exp"]}>
-          <img src="https://i.ibb.co/x54TFQ0/lava.png" alt="" />
+          <img src={image} alt="" />
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 

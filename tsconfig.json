@@ -27,11 +27,17 @@
       "@/templates/about/*": [
         "templates/about/*"
       ],
+      "@/templates/section/*": [
+        "templates/section/*"
+      ],
       "@/public/icons/*": [
         "public/icons/*"
       ],
       "@/pages/*": [
         "pages/*"
+      ],
+      "@/pages/section/*": [
+        "pages/section/*"
       ]
     },
     "target": "ES2016",

@@ -6,6 +6,43 @@
   overflow: hidden;
 }
 
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  .bar_navegation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: $dark;
+    }
+
+    nav {
+      ul {
+        display: flex;
+
+        li {
+          margin-left: 2rem;
+        }
+
+        a {
+          font-size: 1.3rem;
+          color: $bg-white;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
 .cont_exp {
   display: flex;
   flex-direction: column-reverse;
@@ -79,11 +116,8 @@
 
 }
 
-
-
-
 @media screen and (min-width:950px) {
-  .text_exp {
+  .text_balanceo {
     height: 55vh;
     text-align: center;
     align-items: center;
