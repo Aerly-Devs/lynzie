@@ -18,7 +18,7 @@ const Description = ({ styles }) => {
             <a>COMENZAR</a>
           </Link>
         </div>
-        <div className="img_exp">
+        <div className={styles["img_exp"]}>
           <img src="https://i.ibb.co/x54TFQ0/lava.png" alt="" />
         </div>
       </div>
