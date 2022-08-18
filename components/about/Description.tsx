@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from '@/styles/about/Description.module.sass';
 
-const Description = () => {
+const Description = ({ styles }) => {
   return (
     <>
       <div className={styles.paragraph}>

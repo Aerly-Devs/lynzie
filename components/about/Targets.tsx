@@ -1,5 +1,6 @@
 import React from "react";
 import Target from "@/components/about/Target";
+import styles from "@/styles/about/About.module.scss";
 
 const Targets = () => {
   const developers = [
@@ -30,6 +31,7 @@ const Targets = () => {
     <>
       {developers.map(developer => {
         return <Target
+          styles={styles}
           name={developer.name}
           instagram={developer.instagram}
           github={developer.github}

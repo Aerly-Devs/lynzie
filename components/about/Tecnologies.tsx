@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from "@/styles/about/Tecnologies.module.sass";
 
-const Tecnologies = () => {
+const Tecnologies = ({ styles }) => {
   return (
     <>
       <section>

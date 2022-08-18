@@ -1,0 +1,308 @@
+@import '../_vars.sass';
+
+//mixins
+@mixin technologies-settings {
+  display: grid;
+  justify-items: center;
+  row-gap: 42px;
+  margin-bottom: 42px;
+
+  .technology {
+    .description-text {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+}
+
+@mixin final-container-settings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+
+  .half-image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// mobile
+@media screen and (max-width: 480px) {
+
+  //mobile place holders
+  %title {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  %title-card {
+    font-size: 24px;
+    color: $bg-white;
+    font-weight: 600;
+  }
+
+  %description-card-text {
+    font-size: 18px;
+    font-weight: lighter;
+    color: $bg-white;
+  }
+
+  .container {
+    padding: 32px;
+
+    header {
+      .paragraph {
+        margin-bottom: 32px;
+
+        .title {
+          @extend %title;
+        }
+
+        .description-text {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .card {
+      .title-card {
+        @extend %title-card;
+        margin-bottom: 6px;
+      }
+
+      .card-description {
+        @extend %description-card-text;
+        margin-bottom: 18px;
+      }
+
+      hr {
+        margin-bottom: 18px;
+      }
+
+      .icons-container {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          color: $bg-white;
+          filter: $bg-filter;
+
+          img {
+            color: $bg-white;
+          }
+        }
+      }
+    }
+
+    section {
+      .title {
+        @extend %title;
+        margin-bottom: 32px;
+      }
+
+      .technologies-container {
+        @include technologies-settings;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .final-container {
+      @include final-container-settings;
+    }
+  }
+}
+
+//tablet
+@media screen and (min-width: 512px) {
+
+  //tablet placeholders
+  %title-tablet {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  %title-card-tablet {
+    font-size: 18px;
+    color: $bg-white;
+    font-weight: 600;
+  }
+
+  %description-card-text-tablet {
+    font-size: 16px;
+    font-weight: lighter;
+    color: $bg-white;
+  }
+
+  .container {
+    padding: 42px;
+
+    .paragraph {
+      margin-bottom: 42px;
+
+      .title {
+        @extend %title-tablet
+      }
+
+      .description-text {
+        overflow: hidden;
+        font-size: 24px;
+      }
+
+    }
+
+    .card {
+      .title-card {
+        @extend %title-card-tablet;
+        margin-bottom: 12px;
+      }
+
+      .card-description {
+        @extend %description-card-text-tablet;
+        margin-bottom: 32px;
+      }
+
+      hr {
+        margin-bottom: 28px;
+      }
+
+      .icons-container {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: $bg-white;
+            filter: $bg-filter;
+
+            img {
+              color: $bg-white;
+            }
+          }
+      }
+
+    }
+
+    section {
+      .title {
+        @extend %title-tablet;
+        margin-bottom: 42px;
+      }
+
+      .technologies-container {
+        @include technologies-settings;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .final-container {
+      @include final-container-settings;
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: 920px) {
+
+  // Desktop placeholders
+  %title-card-desktop {
+    font-size: 24px;
+    color: $bg-white;
+    font-weight: 600;
+  }
+
+  %description-card-text-desktop {
+    font-size: 20px;
+    font-weight: lighter;
+    color: $bg-white;
+  }
+
+  .container {
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 24px;
+      margin-bottom: 64px;
+
+      .card {
+        .title-card {
+          @extend %title-card-desktop;
+          margin-bottom: 12px;
+        }
+
+        .card-description {
+          @extend %description-card-text-desktop;
+          margin-bottom: 32px;
+        }
+
+        hr {
+          margin-bottom: 28px;
+        }
+
+        .icons-container {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+              color: $bg-white;
+              filter: $bg-filter;
+
+              img {
+                color: $bg-white;
+              }
+            }
+        }
+
+      }
+    }
+
+    section {
+      .title {
+        text-align: center;
+        margin-bottom: 52px;
+      }
+
+      .technologies-container {
+        grid-template-columns: repeat(6, 1fr);
+      }
+    }
+  }
+
+}
+
+.container {
+  max-width: 100vw;
+  overflow-x: hidden;
+
+  .card {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    padding: 32px;
+    background-color: $dark;
+    margin-bottom: 32px;
+
+    .icons-container {
+      .icon-container {
+        height: 32px;
+        width: 32px;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.final-container {
+  .half-image {
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+}
