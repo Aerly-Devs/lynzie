@@ -70,7 +70,7 @@ body {
   text-align: center;
 }
 .pasos_container .paso img {
-  width: 200px;
+  width: 250px;
   margin: auto auto;
 }
 .pasos_container .paso .r_final {
@@ -81,4 +81,37 @@ body {
 }
 .pasos_container .paso .r_final img {
   width: 400px;
+}
+
+@media screen and (min-width: 800px) {
+  .pasos_container .paso {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+  }
+  .pasos_container .paso img {
+    width: 400px;
+  }
+  .pasos_container .paso h2 {
+    text-align: start;
+  }
+  .pasos_container .paso .r_final {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .pasos_container .paso .r_final img {
+    width: 900px;
+    height: 800px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (min-width: 1190px) {
+  .pasos_container .paso img {
+    width: 500px;
+  }
 }/*# sourceMappingURL=pasos.css.map */
