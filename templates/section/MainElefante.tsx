@@ -15,6 +15,7 @@ const MainElefante = () => {
         title={title}
         description={description}
         image={imageUrl}
+        url={"pasosElefante"}
       />
     </>
   );

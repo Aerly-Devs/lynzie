@@ -68,3 +68,48 @@
     }
   }
 }
+
+@media screen and (min-width:800px) {
+  .pasos_container {
+    .paso {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      align-items: center;
+
+      img {
+        width: 400px;
+      }
+
+      h2 {
+        text-align: start;
+      }
+
+      .r_final {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        object-fit: cover;
+
+
+        img {
+          width: 900px;
+          height: 800px;
+          object-fit: cover;
+
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width:1190px) {
+  .pasos_container {
+    .paso {
+      img {
+        width: 500px;
+      }
+    }
+  }
+}
