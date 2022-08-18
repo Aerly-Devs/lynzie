@@ -27,9 +27,10 @@ const Footer = () => {
         </article>
         <article className={styles.description}>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
-            excepturi nam quo aliquam dolores repellat eaque ex quibusdam dolore
-            incidunt?
+            Este proyecto consistio en poder facilitar la demostracióon de los
+            experimentos acerca de reacciones quimicas, convencer a las personas
+            que no se necesitan de materiales costosos y los puedas realizar
+            desde tu hogar.
           </p>
         </article>
         <article className={styles.aerly}>

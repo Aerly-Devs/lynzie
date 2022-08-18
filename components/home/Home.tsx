@@ -11,8 +11,8 @@ const Home = () => {
           <div className={styles["text_header"]}>
             <h1>LYNZIE</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              aperiam!
+              ¡La plataforma que te mostrara como hacer tus mejores
+              experimentos!
             </p>
             <Link href="#">
               <a>COMENZAR</a>

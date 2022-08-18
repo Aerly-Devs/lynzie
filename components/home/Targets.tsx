@@ -4,14 +4,14 @@ import Link from 'next/link';
 const Targets = ({ styles }) => {
   return (
     <section className={styles.ecuaciones}>
-      <h2>Ecuaciónes Quimicas</h2>
+      <h2>EXPERIMENTOS</h2>
       <div className={styles["targets_container"]}>
         <figure className={styles.target}>
           <div className={styles["text_target"]}>
-            <h3>Balanceo</h3>
+            <h3>Lampara de lava</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum,
-              nostrum?
+              Son objetos que emiten una luz relajante y quedan muy bien en
+              cualquier dormitorio.
             </p>
             <Link href="#">
               <a>COMENZAR</a>
@@ -20,10 +20,10 @@ const Targets = ({ styles }) => {
         </figure>
         <figure className={styles.target}>
           <div className={styles["text_target"]}>
-            <h3>Balanceo</h3>
+            <h3>Pasta de Elefante</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum,
-              nostrum?
+              Se denomina dentífrico de elefante, pasta de dientes de elefante o
+              volcán de espuma.
             </p>
             <Link href="#">
               <a>COMENZAR</a>
