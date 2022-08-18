@@ -25,6 +25,7 @@ body {
   overscroll-behavior-x: contain;
   -ms-scroll-snap-type: x proximity;
       scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
 }
 .pasos_container .paso {
   border: solid 1px rgb(238, 238, 238);
@@ -39,7 +40,37 @@ body {
 }
 .pasos_container .paso h1 {
   font-size: 4rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .pasos_container .paso p {
   font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.pasos_container .paso ul {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.pasos_container .paso ul li {
+  font-size: 2rem;
+}
+.pasos_container .paso a {
+  display: block;
+  background-color: #171717;
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 0.8rem;
+  margin-top: 2rem;
+  color: #EFF0F2;
+  letter-spacing: 0.3rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.pasos_container .paso img {
+  width: 80%;
+  margin: auto auto;
 }/*# sourceMappingURL=pasos.css.map */
