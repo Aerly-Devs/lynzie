@@ -38,7 +38,7 @@ body {
   height: 100vh;
   scroll-snap-align: center;
 }
-.pasos_container .paso h1 {
+.pasos_container .paso h2 {
   font-size: 4rem;
   margin-bottom: 20px;
   text-align: center;
@@ -46,7 +46,6 @@ body {
 .pasos_container .paso p {
   font-size: 2rem;
   margin-bottom: 20px;
-  text-align: center;
 }
 .pasos_container .paso ul {
   height: 140px;
@@ -71,6 +70,15 @@ body {
   text-align: center;
 }
 .pasos_container .paso img {
-  width: 80%;
+  width: 200px;
   margin: auto auto;
+}
+.pasos_container .paso .r_final {
+  width: 300px;
+  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pasos_container .paso .r_final img {
+  width: 400px;
 }/*# sourceMappingURL=pasos.css.map */

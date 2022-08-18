@@ -22,7 +22,7 @@
     height: 100vh;
     scroll-snap-align: center;
     
-      h1{
+      h2{
         font-size: 4rem;
         margin-bottom: 20px;
         text-align: center;
@@ -31,7 +31,7 @@
       p{
         font-size: 2rem;
         margin-bottom: 20px;
-        text-align: center;
+        // text-align: center;
       }
 
       ul{
@@ -40,6 +40,7 @@
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 20px;
+        // align-items: center;
         li{
             font-size: 2rem;
         }
@@ -50,9 +51,23 @@
       }
 
       img{
-        width: 80%;
+        width: 200px;
         margin: auto auto;
       }
+
+      .r_final{
+        width: 300px;
+       text-align:center ;
+       object-fit: cover;
+
+
+        img{
+         width: 400px;
+
+        }
+      }
+
+
     }
 
     
