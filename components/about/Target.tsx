@@ -17,12 +17,10 @@ const Target = ({ name, instagram, github, linkedin, twitter }) => {
             <div className={styles["icon-container"]}>
               <Link href={instagram} target="_blank">
                 <a>
-                  <Image
-                    src="./icons/instagram.svg"
+                  <img
+                    src="/icons/instagram.svg"
                     className="icon"
                     alt="Instagram icon"
-                    width={200}
-                    height={200}
                   />
                 </a>
               </Link>
@@ -32,12 +30,10 @@ const Target = ({ name, instagram, github, linkedin, twitter }) => {
             <div className={styles["icon-container"]}>
               <Link href={github} target="_blank">
                 <a>
-                  <Image
-                    src="./icons/github.svg"
+                  <img
+                    src="/icons/github.svg"
                     className="icon"
                     alt="gitHub icon"
-                    width={200}
-                    height={200}
                   />
                 </a>
               </Link>
@@ -47,12 +43,10 @@ const Target = ({ name, instagram, github, linkedin, twitter }) => {
             <div className={styles["icon-container"]}>
               <Link href={linkedin} target="_blank">
                 <a>
-                  <Image
-                    src="./icons/linkedin.svg"
+                  <img
+                    src="/icons/linkedin.svg"
                     className="icon"
                     alt="LinkedIn icon"
-                    width={200}
-                    height={200}
                   />
                 </a>
               </Link>
@@ -62,12 +56,10 @@ const Target = ({ name, instagram, github, linkedin, twitter }) => {
             <div className={styles["icon-container"]}>
               <Link href={twitter} target="_blank">
                 <a>
-                  <Image
-                    src="./icons/twitter.svg"
+                  <img
+                    src="/icons/twitter.svg"
                     className="icon"
                     alt="Twitter icon"
-                    width={200}
-                    height={200}
                   />
                 </a>
               </Link>
@@ -77,6 +69,6 @@ const Target = ({ name, instagram, github, linkedin, twitter }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Target;

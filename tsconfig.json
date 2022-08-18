@@ -24,6 +24,15 @@
       "@/templates/*": [
         "templates/*"
       ],
+      "@/templates/about/*": [
+        "templates/about/*"
+      ],
+      "@/public/icons/*": [
+        "public/icons/*"
+      ],
+      "@/pages/*": [
+        "pages/*"
+      ]
     },
     "target": "ES2016",
     "lib": [

@@ -28,8 +28,8 @@ const Targets = () => {
 
   return (
     <>
-      {developers.map((developer) => {
-        <Target
+      {developers.map(developer => {
+        return <Target
           name={developer.name}
           instagram={developer.instagram}
           github={developer.github}
