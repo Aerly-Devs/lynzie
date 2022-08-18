@@ -1,4 +1,4 @@
-@import '../_vars.sass';
+@import '../vars.sass';
 
 //mixins
 @mixin technologies-settings {
@@ -31,7 +31,7 @@
 }
 
 // mobile
-@media screen and (max-width: 300px) {
+@media screen and (min-width: 300px) {
 
   //mobile place holders
   %title {
