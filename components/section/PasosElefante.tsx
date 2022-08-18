@@ -4,7 +4,7 @@ const PasosElefante = ({ styles }) => {
   return (
     <section className={styles["pasos_container"]}>
       <div id="paso1" className={styles.paso}>
-        <img src="https://i.ibb.co/bKHYTqd/perspective-matte.png" alt="" />
+        <img src="https://i.ibb.co/7SGLMzB/perspective-matte.png" alt="" />
         <div>
           <h2>Paso 1</h2>
           <p>Tener los materiales que se usaran para el experimento</p>
@@ -27,15 +27,12 @@ const PasosElefante = ({ styles }) => {
             <li>
               <b>- Colorante vegetal</b>
             </li>
-            <li>
-              <b>- Una bandeja</b>
-            </li>
           </ul>
           <a href="#paso2">SIGUIENTE PASO</a>
         </div>
       </div>
       <div id="paso2" className={styles.paso}>
-        <img src="https://i.ibb.co/bKHYTqd/perspective-matte.png" alt="" />
+        <img src="https://i.ibb.co/7SGLMzB/perspective-matte.png" alt="" />
         <div>
           <h2>Paso 2</h2>
           <p>
@@ -47,7 +44,7 @@ const PasosElefante = ({ styles }) => {
         </div>
       </div>
       <div id="paso3" className={styles.paso}>
-        <img src="https://i.ibb.co/bKHYTqd/perspective-matte.png" alt="" />
+        <img src="https://i.ibb.co/7SGLMzB/perspective-matte.png" alt="" />
         <div>
           <h2>Paso 3</h2>
           <p>
@@ -60,7 +57,7 @@ const PasosElefante = ({ styles }) => {
         </div>
       </div>
       <div id="paso4" className={styles.paso}>
-        <img src="https://i.ibb.co/bKHYTqd/perspective-matte.png" alt="" />
+        <img src="https://i.ibb.co/7SGLMzB/perspective-matte.png" alt="" />
         <div>
           <h2>Paso 4</h2>
           <p>
@@ -68,32 +65,19 @@ const PasosElefante = ({ styles }) => {
             que verter la mezcla de la levadura con agua tibia en la botella de
             vidrio.
           </p>
-          <a href="#paso5">SIGUIENTE PASO</a>
+          <a href="#paso6">SIGUIENTE PASO</a>
           <a href="#paso3">REGRESAR AL PASO ANTERIOR</a>
-        </div>
-      </div>
-      <div id="paso5" className={styles.paso}>
-        <img src="https://i.ibb.co/bKHYTqd/perspective-matte.png" alt="" />
-        <div>
-          <h2>Paso 5</h2>
-          <p>
-            Por ultimo debemos colocar el frasco de vidrio sobre una superficie
-            de luz que sea un poco fuerte, y colocarle el vinagre con el
-            colorante ya mesclado del paso anterior.
-          </p>
-          <a href="#paso6">RESULTADO FINAL</a>
-          <a href="#paso4">REGRESAR AL PASO ANTERIOR</a>
         </div>
       </div>
       <div id="paso6" className={styles.paso}>
         <div className={styles["r_final"]}>
-          <img src="https://i.ibb.co/vZzq35f/lavaverde-1024x1024.webp" alt="" />
+          <img src="https://i.ibb.co/smqQWmR/elefante.png" alt="" />
         </div>
         <div>
           <h2>Resultado Final</h2>
           <p>
-            El resultado final es una lampara con mucho estilo que se puede
-            hacer en un par de minutos
+            El resultado final es una increible espuma de colores que puedes
+            hacer en pocos minutos
           </p>
           <a href="/">PROBAR OTRO EXPERIMENTO</a>
         </div>
