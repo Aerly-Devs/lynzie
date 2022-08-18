@@ -16,7 +16,7 @@ body {
   background-color: #EFF0F2;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 300px) {
   .container section .title, .container header .paragraph .title {
     font-size: 24px;
     margin-bottom: 18px;
@@ -82,7 +82,7 @@ body {
     height: auto;
   }
 }
-@media screen and (min-width: 512px) {
+@media screen and (min-width: 300px) {
   .container section .title, .container .paragraph .title {
     font-size: 24px;
     margin-bottom: 18px;
