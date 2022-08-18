@@ -15,6 +15,7 @@ const MainLampara = () => {
         title={title}
         description={description}
         image={imageUrl}
+        url={"pasosLamp"}
       />
     </>
   )

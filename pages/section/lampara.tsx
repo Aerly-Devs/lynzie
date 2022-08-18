@@ -6,7 +6,7 @@ const lampara = () => {
   return (
     <>
       <Head>
-        <title>Lampara de lava | Lynzie</title>
+        <title>Lampara de Lava | Lynzie</title>
       </Head>
       <MainLampara />
     </>

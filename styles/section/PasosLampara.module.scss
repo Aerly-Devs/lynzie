@@ -1,0 +1,70 @@
+@import '../vars';
+
+.pasos_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+
+  .paso {
+    border: solid 1px rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: ease-in-out .3s all;
+    padding: 4rem;
+    min-width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+
+    h2 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      // text-align: center;
+    }
+
+    ul {
+      height: 140px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      // align-items: center;
+      li {
+        font-size: 2rem;
+      }
+    }
+
+    a {
+      @include boton
+    }
+
+    img {
+      width: 200px;
+      margin: auto auto;
+    }
+
+    .r_final {
+      width: 300px;
+      text-align: center;
+      object-fit: cover;
+
+
+      img {
+        width: 400px;
+
+      }
+    }
+  }
+}

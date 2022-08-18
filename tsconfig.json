@@ -21,6 +21,9 @@
       "@/styles/home/*": [
         "styles/home/*"
       ],
+      "@/styles/section/*": [
+        "styles/section/*"
+      ],
       "@/templates/*": [
         "templates/*"
       ],

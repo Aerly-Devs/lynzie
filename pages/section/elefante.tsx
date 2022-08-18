@@ -6,7 +6,7 @@ const elefante = () => {
   return (
     <>
       <Head>
-        <title>Lampara de lava | Lynzie</title>
+        <title>Pasta de Elefante | Lynzie</title>
       </Head>
       <MainElefante />
     </>

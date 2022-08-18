@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Description = ({ styles, title, description, image }) => {
+const Description = ({ styles, title, description, image, url }) => {
   return (
     <>
       <header className={styles.header}>
@@ -34,7 +34,7 @@ const Description = ({ styles, title, description, image }) => {
             <p>
               {description}
             </p>
-            <Link href="/">
+            <Link href={`/section/${url}`}>
               <a>COMENZAR</a>
             </Link>
           </div>
