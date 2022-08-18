@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import styles from '@/styles/home/Home.module.sass';
 
 const Home = () => {
@@ -14,9 +12,7 @@ const Home = () => {
               ¡La plataforma que te mostrara como hacer tus mejores
               experimentos!
             </p>
-            <Link href="#">
-              <a>COMENZAR</a>
-            </Link>
+            <a href="#targets">COMENZAR</a>
           </div>
           <div className={styles["img_header"]}>
             <img src="https://i.ibb.co/th7mxZ8/atom.png" alt="" />

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Targets = ({ styles }) => {
   return (
-    <section className={styles.ecuaciones}>
+    <section id="targets" className={styles.ecuaciones}>
       <h2>EXPERIMENTOS</h2>
       <div className={styles["targets_container"]}>
         <figure className={styles.target}>
