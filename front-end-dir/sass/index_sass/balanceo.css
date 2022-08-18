@@ -23,13 +23,9 @@ body {
 }
 
 header {
+  position: fixed;
   width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  color: #EFF0F2;
+  z-index: 100;
 }
 header .bar_navegation {
   width: 100%;
@@ -55,48 +51,78 @@ header .bar_navegation nav ul a {
   font-weight: 300;
 }
 
-.a {
-  background-image: url(https://i.ibb.co/LnDX7WS/sect-a-2.png);
+.cont_exp {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.cont_exp .img_exp {
+  width: 100%;
+}
+.cont_exp .img_exp img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: saturate(0);
 }
 
-.b {
-  background-image: url(https://i.ibb.co/cYmYKsY/sect-b-2.png);
-}
-
-.text_balanceo {
+.text_exp {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  height: 85vh;
+  padding: 10px;
+  padding-top: 30px;
 }
-.text_balanceo h1 {
+.text_exp h1 {
   font-size: 3rem;
   margin-bottom: 20px;
 }
-.text_balanceo p {
+.text_exp p {
   font-size: 1.6rem;
   line-height: 2.5rem;
 }
-.text_balanceo a {
+.text_exp a {
   display: block;
-  background-color: #EFF0F2;
+  background-color: #171717;
   width: 100%;
   padding: 20px 30px;
   border-radius: 0.8rem;
-  margin-top: 20px;
-  color: #696969;
+  margin-top: 2rem;
+  color: #EFF0F2;
   letter-spacing: 0.3rem;
   font-size: 1.2rem;
   text-align: center;
 }
 
+@media screen and (min-width: 716px) {
+  .cont_exp {
+    display: grid;
+    grid-template-columns: repeat(2, 60% 40%);
+  }
+  .cont_exp .img_exp {
+    width: 100%;
+    height: 100vh;
+    padding-top: 0px;
+  }
+  .cont_exp .img_exp img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .text_exp {
+    padding: 30px;
+  }
+  header .bar_navegation .logo {
+    color: #171717;
+  }
+}
 @media screen and (min-width: 950px) {
   .text_balanceo {
     height: 55vh;
     text-align: center;
     align-items: center;
     width: 70%;
-    margin: auto auto;
   }
   .text_balanceo a {
     width: 300px;

@@ -2,20 +2,21 @@
 
 .container{
     max-width: 85%;
-        margin: auto auto;
-        overflow: hidden;
+    margin: auto auto;
+    overflow: hidden;
 }
 
 header{
-   @include bg_secciones;
-   height: 100vh;
-
+    position:fixed;
+    width: 100%;
+    z-index: 100;
    .bar_navegation{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 30px;
+    
     
     .logo {
         font-size: 1.8rem;
@@ -37,26 +38,36 @@ header{
                 font-weight: 300;
             }
         }
-        
+          
     }
     
    }
-   color: $bg;
+   
 }
 
-.a{
-    background-image: url(https://i.ibb.co/LnDX7WS/sect-a-2.png);
+.cont_exp{
+    display: flex;
+    flex-direction: column-reverse;
+    
+    .img_exp{
+        width: 100%;
+       
+        img{
+            width: 100%;
+            height:300px;
+            object-fit: cover;
+            filter: saturate(0);
+        }
+    }
 }
 
-.b{
-    background-image: url(https://i.ibb.co/cYmYKsY/sect-b-2.png);
-}
-
-.text_balanceo{
+.text_exp{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    height: 85vh;
+    padding: 10px;
+    padding-top: 30px;
+  
 
     h1{
         font-size: 3rem;
@@ -70,9 +81,45 @@ header{
     }
 
     a{
-        @include boton_Blanco;
+        @include boton;
     }
 }
+
+@media screen and (min-width:716px){
+    .cont_exp{
+        display: grid;
+        grid-template-columns: repeat(2,60% 40%);
+        
+        .img_exp{
+            width: 100%;
+            height: 100vh;
+            padding-top: 0px;
+    
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        
+    }
+
+    .text_exp{
+        padding: 30px;
+    }
+
+    header{
+        .bar_navegation{
+            .logo{
+                color: $dark;
+            }
+        }
+    }
+    
+}
+
+
+
 
 @media screen and (min-width:950px) {
      .text_balanceo{
@@ -80,7 +127,7 @@ header{
         text-align: center;
         align-items: center;
         width: 70%;
-        margin: auto auto;
+        // margin: auto auto;
      a{
         width: 300px;
      }

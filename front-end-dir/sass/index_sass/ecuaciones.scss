@@ -2,7 +2,7 @@
 
 @media screen and (min-width:375px){
     .target{
-        @include target;
+        @include target_bg;
         a{
             @include boton_Blanco;
         }
@@ -13,17 +13,25 @@
         p{
             font-size: 1.3rem;
         }
-    
+
+        .text_target{
+            width: 95%;
+            margin: auto;
+        }
+
     }
-    
+
     .a{
-        background-image: url(https://i.ibb.co/pWqjtvv/sect-A-1.png);
+        background-image: url(https://i.ibb.co/x54TFQ0/lava.png);
     }
-    
+
     .b{
-        background-image: url(https://i.ibb.co/6WCtM1N/sect-B-1.png);
+        background-image: url(https://i.ibb.co/smqQWmR/elefante.png);
     }
-    
+    // .c{
+    //     background-image: url(https://i.ibb.co/m6cfH8W/mamba.png);
+    // }
+
     .ecuaciones{
         @include section;
         margin-top: 40px;
@@ -38,5 +46,10 @@
         display: grid;
         grid-template-columns: repeat(2, 48%);
         justify-content: space-between;
-     }       
+
+        .text_target{
+            width: 95%;
+            margin: auto;
+        }
+     }
 }

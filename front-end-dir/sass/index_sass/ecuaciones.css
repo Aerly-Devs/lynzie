@@ -50,16 +50,21 @@ body {
   .target p {
     font-size: 1.3rem;
   }
+  .target .text_target {
+    width: 95%;
+    margin: auto;
+  }
   .a {
-    background-image: url(https://i.ibb.co/pWqjtvv/sect-A-1.png);
+    background-image: url(https://i.ibb.co/x54TFQ0/lava.png);
   }
   .b {
-    background-image: url(https://i.ibb.co/6WCtM1N/sect-B-1.png);
+    background-image: url(https://i.ibb.co/smqQWmR/elefante.png);
   }
   .ecuaciones {
     margin-top: 60px;
     margin-bottom: 60px;
     height: 100%;
+    margin-top: 40px;
   }
   .ecuaciones h2 {
     font-size: 2rem;
@@ -73,5 +78,9 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 48%);
     justify-content: space-between;
+  }
+  .targets_container .text_target {
+    width: 95%;
+    margin: auto;
   }
 }/*# sourceMappingURL=ecuaciones.css.map */
